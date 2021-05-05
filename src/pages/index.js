@@ -9,7 +9,7 @@ import CartOverview from '../components/CartOverview'
 import { loadStripe } from '@stripe/stripe-js'
 import { CartProvider } from 'use-shopping-cart'
 
-const stripePromise = loadStripe(process.env.STRIPE_PUBLISHABLE)
+const stripePromise = loadStripe(process.env.GATSBY_STRIPE_PUBLISHABLE_KEY)
 
 const url = typeof window !== 'undefined' ? window.location.origin: null;
 
